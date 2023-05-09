@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#page{
+    display: flex;
+    min-height: 87vh;
+}
+#navbar{
+    background-color: black;
+    width: 15%;
+    color: white;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    padding: 0px 5px;
+}
+#navbarList{
+    font-weight: bold;
+    padding: 5px 0px;
+}
+.homeIcon{
+    margin: 15px 20px;
+}
+.homeIcon i{
+    margin-right: 5px;
+}
+#customFunction{
+    padding: 30px 0px;
+}
+.songCustom{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+.songCustom i{
+    margin-right: 7px;
+    font-size: 30px;
+}
+
+
+/* Player */
+#player{
+    position: sticky;
+    height: 80px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    color: white;
+}
+#artist{
+    display: flex;
+    padding: 0 10px;
+    font-size: 15px;
+    width: 13vw;
+}
+#liked{
+    cursor: pointer;
+}
+#songName{
+    padding: 0 10px;
+}
+#singer{
+    font-size: 12px;
+    padding: 0 10px;
+}
+#myPlayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#progressBar{
+    width: 50vw;
+    cursor: pointer;
+}
+#icons{
+    font-size: 30px;
+}
+#icons i{
+    cursor: pointer;
+    padding: 0 2px;
+}
+#playerControl{
+    padding: 0 15px;   
+}
+
+/* Home Design */
+#home{
+    background-color: rgb(37, 37, 41);
+    color: white;
+    width: 85%;
+    padding: 15px;
+}
+#homeButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#profile{
+    display: flex;
+}
+#plan{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 13px;
+}
+#navigate{
+    padding: 12px;
+}
+#navigate i{
+    font-size: 25px;
+    padding: 3px;
+}
+#profileName{
+    padding: 5px 15px 5px 0px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 13px;
+    text-align: center;
+}
+#profileName i{
+    font-size: 15px;
+    padding-right: 5px;
+    
+}
+#home h2{
+    font-weight: 1000;
+    padding: 0 15px;
+}
+#categories{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#categories div{
+    display: flex;
+    flex-basis: 300px;
+    height: 60px;
+    background-color: rgb(82, 82, 82);
+    margin: 15px;
+    align-items: center;
+    border-radius: 5px;
+}
+#categories img{
+    height: 60px;
+    width: 70px;
+}
+.categoriesTitle{
+    padding: 0 10px;
+    font-weight: 580;
+}
+#allSong h4{
+    padding: 15px;
+}
+#songList{
+    display: flex;
+    flex-wrap: wrap;
+}
+#songList >div{
+    flex-basis: 140px;
+    height: 250px;
+    background-color: rgb(82, 82, 82);
+    margin: 15px;
+    align-items: center;
+    border-radius: 5px;
+}
+.songs img{
+    width: 140px;
+    height: 150px;
+}
+.songs h5{
+    padding: 5px;
+    font-size: 15px;
+}
+.songs div{
+    color: rgb(179, 173, 173);
+    padding: 0 5px;
+}
+.songs i{
+    font-size: 40px;
+    position: relative;
+    left: 100px;
+    bottom: 110px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+

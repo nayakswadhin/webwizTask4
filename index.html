@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Spotify: The Music You Want</title>
+</head>
+<body>
+    <div id="page">
+        <section id="navbar">
+            <span id="logo"><img src="spotify-logo-png-7057.png" alt="">Spotify</span>
+            <div id="navbarList">
+                <div class="homeIcon"><i class="fa-solid fa-house"></i>Home</div>
+                <div class="homeIcon"><i class="fa-sharp fa fa-magnifying-glass"></i>Search</div>
+                <div class="homeIcon"><i class="fa-sharp fa-regular fa-bookmark"></i>Your Library</div>
+            </div>
+            <div id="customFunction">
+                <div class="songCustom"><i class="fa-sharp fa-solid fa-square-plus"></i>Create Playlist</div>
+                <div class="songCustom"><i class="fa-sharp fa-solid fa-square-plus"></i>Liked Songs</div>
+            </div>
+        </section>
+        <div id="home">
+            <div id="homeButton">
+                <div id="navigate">
+                    <i class="fa fa-circle-chevron-left"></i>
+                    <i class="fa fa-circle-chevron-right"></i>
+                </div>
+                <div id="profile">
+                    <div id="plan">Upgrade</div>
+                    <div id="profileName"><i class='fas fa-user-circle'></i>Marco1112</div>
+                </div>
+            </div>
+            <h2>Good morning</h2>
+            <div id="categories">
+                <div><img src="bollywood wally.jpeg" alt=""> <div class="categoriesTitle">Liked Songs</div></div>
+                <div><img src="indie.jpg" alt=""><div class="categoriesTitle">Indie indie</div></div>
+                <div><img src="hindi.jpeg" alt=""><div class="categoriesTitle">Hindi</div></div>
+                <div><img src="90's bollywood.jpg" alt=""><div class="categoriesTitle">90's Bollywood</div></div>
+                <div><img src="english.jpeg" alt=""> <div class="categoriesTitle">English</div></div>
+                <div><img src="arijit.jpeg" alt=""> <div class="categoriesTitle">Arijit Singh</div></div>
+            </div>
+            <div id="allSong">
+                <h4>Made For You</h4>
+                <div id="songList">
+                    <div class="songs">
+                        <img src="Doobey-From-Gehraiyaan--Hindi-2022-20220123172625-500x500.jpg" alt="">
+                        <h5>Doobey</h5>
+                        <div>OAFF</div>
+                        <i id="1" class="fa-solid myPlay fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                    <div class="songs">
+                        <img src="bhool bhulaiyaa 2.jpeg" alt="">
+                        <h5>Bhool Bhulaiyaa</h5>
+                        <div>Tanishk</div>
+                        <i id="2" class="fa-solid myPlay bhool fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                    <div class="songs">
+                        <img src="phone mila ke.jpg" alt="">
+                        <h5>Phone Mila Ke</h5>
+                        <div>Raftaar</div>
+                        <i id="3" class="fa-solid myPlay fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                    <div class="songs">
+                        <img src="Dotara-Hindi-2023-20230309191735-500x500.jpg" alt="">
+                        <h5>Dotara</h5>
+                        <div>Jubin Nautiyal</div>
+                        <i id="4" class="fa-solid myPlay fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                    <div class="songs">
+                        <img src="Kudiyee-Ni-Teri-From-Selfiee-Punjabi-2023-20230209220212-500x500.jpg" alt="">
+                        <h5>Kudiyee Ni Teri</h5>
+                        <div>The PropheC</div>
+                        <i id="5" class="fa-solid myPlay fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                    <div class="songs">
+                        <img src="Param_Sundari_Cover.jpeg" alt="">
+                        <h5>Param Sundari</h5>
+                        <div>Shreya Ghoshal</div>
+                        <i id="6" class="fa-solid myPlay fa-circle-play" style="color: #4dc421;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="player">
+        <div id="artist">
+            <div>
+                <div id="songName">Doobey </div>
+                <div id="singer">OAFF</div>
+            </div>
+            <div id="liked"><i id="mylike" class="fa-regular fa-heart"></i></div>
+        </div>
+        <div id="myPlayer">
+            <div id="icons">
+                <i id="previous" class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-circle-play"  id="masterPlay"></i>
+                <i id="next" class="fa-solid fa-forward-step"></i>
+            </div>
+            <div>
+                <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+            </div>
+        </div>
+        <div id="playerControl">
+            <i class="fas fa-microphone"></i>
+            <i class='fas fa-volume-up'></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
