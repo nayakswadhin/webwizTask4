@@ -1,0 +1,68 @@
+@media(max-width:1160px){
+    #categories div{
+        flex-basis: auto;
+        flex: 0.5;
+    }
+}
+@media(max-width:900px){
+    #logo{
+        flex-direction: column;
+    }
+    #heartSong{
+        margin-right: 0px;
+    }
+}
+@media(max-width:590px){
+    #categories div{
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    #songList >div{
+        flex-basis: auto;
+    }
+    .songs img{
+        width: 180px;
+        height: 170px;  
+    }
+    .songs i{
+        left: 76%;
+    }
+    .coreElements{
+        display: none;
+    }
+    .songCustom > div{
+        display: none;
+    }
+    .songCustom i{
+        font-size: 20px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+}
+@media(max-width:420px){
+    #songList >div{
+        flex-basis: auto;
+        width: 100%;
+        height: 100%;
+    }
+    #profile{
+        justify-content: space-around;
+        width: 100%;
+    }
+    .songs img{
+        width: 100%;
+        height: 100%;  
+    }
+    #navigate{
+        display: none;
+    }
+    #logoName{
+        display: none;
+    }
+}

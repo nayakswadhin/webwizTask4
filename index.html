@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Spotify: The Music You Want</title>
@@ -12,15 +13,14 @@
 <body>
     <div id="page">
         <section id="navbar">
-            <span id="logo"><img src="spotify-logo-png-7057.png" alt="">Spotify</span>
+            <span id="logo"><img src="spotify-logo-png-7057.png" alt=""><div id="logoName">Spotify</div></span>
             <div id="navbarList">
-                <div class="homeIcon"><i class="fa-solid fa-house"></i>Home</div>
-                <div class="homeIcon"><i class="fa-sharp fa fa-magnifying-glass"></i>Search</div>
-                <div class="homeIcon"><i class="fa-sharp fa-regular fa-bookmark"></i>Your Library</div>
+                <div class="homeIcon"><i class="fa-solid fa-house"></i><div class="coreElements">Home</div></div>
+                <div class="homeIcon"><i class="fa-sharp fa-regular fa-bookmark"></i><div class="coreElements">Your Library</div></div>
             </div>
             <div id="customFunction">
-                <div class="songCustom"><i class="fa-sharp fa-solid fa-square-plus"></i>Create Playlist</div>
-                <div class="songCustom"><i class="fa-sharp fa-solid fa-square-plus"></i>Liked Songs</div>
+                <div class="songCustom"><i class="fa-sharp fa-solid fa-square-plus"></i><div>Create Playlist</div></div>
+                <div id="heartSong" class="songCustom"><i class="fa-solid fa-heart"></i><div>Liked Songs</div></div>
             </div>
         </section>
         <div id="home">
@@ -32,6 +32,9 @@
                 <div id="profile">
                     <div id="plan">Upgrade</div>
                     <div id="profileName"><i class='fas fa-user-circle'></i>Marco1112</div>
+                    <div id="search">
+                        <i class="fa-sharp fa fa-magnifying-glass"></i></button>
+                    </div>
                 </div>
             </div>
             <h2>Good morning</h2>
