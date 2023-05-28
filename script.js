@@ -81,6 +81,8 @@ myPlay.forEach((element)=>{
         songIndex = parseInt(e.target.id);
         
         if(audioElement.paused|| audioElement.duration<=0){
+            console.log("1st======>",`${songIndex}.mp3`);
+            console.log("1st======>",audioElement.src);
             makeAllPlays();
             audioElement.currentTime=0;
             audioElement.src = `${songIndex}.mp3`;
@@ -92,7 +94,24 @@ myPlay.forEach((element)=>{
             let singerName = songs[songIndex-1].singer;
             document.getElementById("songName").innerHTML = songs[songIndex-1].songName;
             document.getElementById("singer").innerText = songs[songIndex-1].singer;
-        }else{
+        }else if(audioElement.src!=`${songIndex}.mp3` && audioElement.play){
+            console.log("2nd======>",`${songIndex}.mp3`);
+            console.log("2nd======>",audioElement.src);
+            makeAllPlays();
+            audioElement.currentTime=0;
+            audioElement.src = `${songIndex}.mp3`;
+            audioElement.play();
+            e.target.classList.remove('fa-circle-play');
+            e.target.classList.add('fa-circle-pause');
+            masterPlay.classList.remove('fa-circle-play');
+            masterPlay.classList.add('fa-circle-pause');
+            let singerName = songs[songIndex-1].singer;
+            document.getElementById("songName").innerHTML = songs[songIndex-1].songName;
+            document.getElementById("singer").innerText = songs[songIndex-1].singer;
+        }
+        else{
+            console.log("3rd======>",`${songIndex}.mp3`);
+            console.log("3rd======>",audioElement.src);
             audioElement.pause()
             masterPlay.classList.add('fa-circle-play');
             masterPlay.classList.remove('fa-circle-pause');
